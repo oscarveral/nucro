@@ -1,15 +1,19 @@
-use std::{collections::HashMap, time::Duration};
+use std::collections::HashMap;
 
-use crate::asset::{Asset, Currency};
+use crate::asset::Asset;
+use crate::currency::Currency;
 
+/// An account that can hold assets.
 struct Account {
+    /// Unique identifier of the account.
+    id: u128,
+    /// Descriptive name.
+    name: String,
+    /// Holdings of this account.
     positions: HashMap<Asset, u128>,
-    transactions: Vec<Transaction>,
-    reference_currency: Currency
+    /// Currency of reference of this account.
+    reference_currency: Currency,
 }
 
-enum Transaction {
-    TX(Asset, u128, Asset, u128, Option<u128>, Duration),
-    IN(Asset, u128, Duration),
-    OUT(Asset, u128, Duration),
-}
+/// Repository of multiple accounts.
+type AccountRepository = Vec<Account>;

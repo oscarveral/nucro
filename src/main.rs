@@ -1,15 +1,17 @@
 mod account;
 mod asset;
+mod currency;
+mod security;
 
 #[derive(Default)]
 struct Portfolio {
-    val: i32
+    val: i32,
 }
 
 #[derive(Debug, Clone, Copy)]
 enum Message {
     INC,
-    DEC
+    DEC,
 }
 
 use iced::widget::{button, column, text, Column};
