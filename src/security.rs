@@ -10,8 +10,12 @@ pub struct Security {
     decimal: u8,
 }
 
-/// Default number of decimal places allowed for securities accounting.
-const DEFAULT_DECIMAL: u8 = 10;
-
 /// Repository of securities.
-pub type SecurityRepository = Vec<Security>;
+pub struct SecurityRepository(Vec<Security>);
+
+impl SecurityRepository {
+    /// Create a new empty security repository.
+    pub fn new() -> Self {
+        SecurityRepository(Vec::new())
+    }
+}

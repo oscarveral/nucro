@@ -14,4 +14,11 @@ pub enum Transaction {
 }
 
 /// Repository of transactions.
-pub type TransactionRepository = Vec<Transaction>;
+pub struct TransactionRepository(Vec<Transaction>);
+
+impl TransactionRepository {
+    /// Create a new empty transaction repository.
+    pub fn new() -> Self {
+        TransactionRepository(Vec::new())
+    }
+}

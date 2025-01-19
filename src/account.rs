@@ -16,4 +16,11 @@ pub struct Account {
 }
 
 /// Repository of multiple accounts.
-pub type AccountRepository = Vec<Account>;
+pub struct AccountRepository(Vec<Account>);
+
+impl AccountRepository {
+    /// Create a new empty account repository.
+    pub fn new() -> Self {
+        AccountRepository(Vec::new())
+    }
+}
