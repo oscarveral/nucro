@@ -4,7 +4,7 @@ use crate::asset::Asset;
 use crate::currency::Currency;
 
 /// An account that can hold assets.
-struct Account {
+pub struct Account {
     /// Unique identifier of the account.
     id: u128,
     /// Descriptive name.
@@ -16,4 +16,4 @@ struct Account {
 }
 
 /// Repository of multiple accounts.
-type AccountRepository = Vec<Account>;
+pub type AccountRepository = Vec<Account>;

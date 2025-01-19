@@ -32,6 +32,9 @@ macro_rules! currency {
     };
 }
 
+/// Default currency to be used when not specified.
+const DEFAULT_CURRENCY: Currency = Currency::EUR;
+
 currency!(
     /// United Arab Emirates dirham. United Arab Emirates.
     (AED, 784, 2),
