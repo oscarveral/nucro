@@ -1,4 +1,4 @@
-use crate::{
+use crate::model::{
     account::AccountRepository, security::SecurityRepository, transaction::TransactionRepository,
 };
 
@@ -18,7 +18,7 @@ impl Portfolio {
         Portfolio {
             securities: SecurityRepository::new(),
             accounts: AccountRepository::new(),
-            transactions: TransactionRepository::new()
+            transactions: TransactionRepository::new(),
         }
     }
 }

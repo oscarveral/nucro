@@ -1,4 +1,4 @@
-use crate::currency::Currency;
+use crate::model::currency::Currency;
 
 /// A financial asset of any type.
 pub enum Asset {

@@ -1,4 +1,4 @@
-use crate::currency::Currency;
+use crate::model::currency::Currency;
 
 /// Default currency to be used when not specified.
 const DEFAULT_CURRENCY: Currency = Currency::EUR;

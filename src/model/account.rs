@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
-use crate::asset::Asset;
-use crate::currency::Currency;
+use crate::model::asset::Asset;
+use crate::model::currency::Currency;
 
 /// An account that can hold assets.
 pub struct Account {

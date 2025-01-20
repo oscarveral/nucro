@@ -10,6 +10,17 @@ pub struct Security {
     decimal: u8,
 }
 
+impl Security {
+    /// Create a new security.
+    fn new(isin: String, name: String, decimal: u8) -> Self {
+        Security {
+            isin: isin,
+            name: name,
+            decimal: decimal,
+        }
+    }
+}
+
 /// Repository of securities.
 pub struct SecurityRepository(Vec<Security>);
 

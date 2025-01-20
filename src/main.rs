@@ -1,13 +1,13 @@
-use portfolio::Portfolio;
+use ui::Interface;
 
-mod account;
-mod asset;
-mod defaults;
-mod currency;
-mod portfolio;
-mod security;
-mod transaction;
+mod model;
+mod ui;
 
 fn main() {
-    let portfolio: Portfolio = Portfolio::new();
+	let ui: Interface = Interface::default();
+
+	let res = ui.run();
+	if res.is_err() {
+		panic!("Interface error");
+	}
 }

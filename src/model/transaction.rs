@@ -1,4 +1,4 @@
-use crate::asset::Asset;
+use crate::model::asset::Asset;
 
 /// Transactions that can take place.
 #[repr(u8)]
