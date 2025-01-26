@@ -19,10 +19,10 @@ impl Security {
             decimal: decimal,
         }
     }
-	/// Get the number of decimals used for a security.
-	fn decimal(&self) -> u8 {
-		self.decimal
-	}
+    /// Get the number of decimals used for a security.
+    fn decimal(&self) -> u8 {
+        self.decimal
+    }
 }
 
 /// Repository of securities.
