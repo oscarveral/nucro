@@ -1,9 +1,9 @@
 mod model;
 mod ui;
 
-use std::io::Result;
 use crossterm::event::{self, Event};
 use ratatui::{widgets::Block, DefaultTerminal, Frame};
+use std::io::Result;
 
 fn main() {
     let terminal = ratatui::init();

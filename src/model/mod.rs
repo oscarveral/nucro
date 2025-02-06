@@ -1,4 +1,4 @@
-mod account;
+pub mod account;
 mod asset;
 mod currency;
 mod defaults;
