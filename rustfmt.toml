@@ -1,0 +1,5 @@
+# Rust edition.
+edition = "2021"
+
+# Style preferences.
+hard_tabs = true
